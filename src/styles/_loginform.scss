@@ -1,0 +1,146 @@
+$widthLeftContainer: 50%;
+$widthRightContainer: calc(100% - $widthLeftContainer);
+
+.login-component-container {
+  width: 80%;
+  margin: auto;
+  height: calc(100vh - 180px);
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+  box-shadow: rgb(200, 203, 209) 5px 5px 20px;
+  position: relative;
+  font-family: $fontParagraph;
+  top: 8em;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+    width: $widthLeftContainer;
+    height: 100%;
+    background-image: url('../assets/COQUE_Plan de travail 1.png');
+    background-position: center;
+    background-size: 130% auto;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 768px) {
+      background-size: 50% auto;
+      width: 100%;
+      height: 20vh;
+    }
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: $widthRightContainer;
+    height: 100%;
+    margin-left: 100px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+      align-items: center;
+      height: initial;
+    }
+
+    h1 {
+      margin-bottom: 2%;
+      font-size: 2.5em;
+      letter-spacing: 4px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+    }
+
+    #welcome {
+      margin-bottom: 10%;
+      color: rgb(250, 80, 60);
+    }
+
+    form {
+      width: 70%;
+
+      input {
+        padding: 15px;
+        border: none;
+        border-bottom: solid 1px rgb(5, 215, 245);
+        box-sizing: border-box;
+        font-family: $fontParagraph;
+        font-size: 1em;
+        letter-spacing: 1px;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      #login-email,
+      #login-password {
+        width: 100%;
+        border-radius: $borderRadiusButton $borderRadiusButton 0 0;
+        &::placeholder {
+          color: $greyNavbar;
+        }
+      }
+
+      #login-submit {
+        width: 40%;
+        padding: 8px 16px;
+        margin-bottom: 10%;
+        border: none;
+        border-radius: $borderRadiusButton;
+        background-color: $red;
+        color: white;
+        font-family: $fontButton;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      font-size: 1em;
+      letter-spacing: 2px;
+    }
+
+    input,
+    #forgot-pswrd {
+      margin-top: 20px;
+    }
+
+    #forgot-pswrd {
+      color: $greyAF;
+      text-align: right;
+    }
+
+    #signup {
+      color: $red;
+    }
+
+    #login-submit,
+    #close,
+    #forgot-pswrd,
+    #signup {
+      cursor: pointer;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}

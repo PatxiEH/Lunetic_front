@@ -1,0 +1,51 @@
+.modelsDetails2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  width: 28vw;
+
+  &__number2 {
+    font-size: 4.5em;
+    font-family: $abrilFatFace;
+    text-align: left;
+    padding-right: 0.5em;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2em;
+    }
+  }
+
+  &__orangeQuotes {
+    position: relative;
+    left: -15%;
+    img {
+      width: 1.8vw;
+    }
+  }
+
+  &__text2 {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    font-family: $montserrat;
+    font-size: 0.9em;
+    line-height: 1.8;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.7em;
+      line-height: 1.4;
+      width: 100%;
+    }
+  }
+
+  // &__btn {
+  //   width: 8em;
+  //   margin-top: 3em;
+  //   background-color: white;
+  //   border: none;
+  //   text-decoration: underline rgb(197, 191, 191);
+  //   font-family: $montserrat;
+  //   font-weight: bold;
+  //   text-align: left;
+  // }
+}

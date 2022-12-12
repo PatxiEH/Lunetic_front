@@ -1,0 +1,50 @@
+// FONTS
+
+@mixin fontPlayfairItalic {
+  font-family: $playfair;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin fontPlayfairNormal {
+  font-family: $playfair;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin fontPlayfairTitles {
+  font-family: $playfair;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
+}
+
+@mixin fontMontserrat {
+  font-family: $montserrat;
+  font-weight: 300;
+}
+
+// INPUT
+
+@mixin closeTopRight {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin ButtonBottomRight {
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+}
+
+// DISPLAY
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules/*
+*.js
+*.css
+*.css.map
+src/styles/*.css
+src/styles/*.css.map
+package-lock.json
+api.ts

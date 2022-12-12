@@ -1,0 +1,94 @@
+.news-component-container {
+  width: 80%;
+  margin: auto;
+  height: calc(100vh - 180px);
+
+  font-family: $fontParagraph;
+  z-index: 2;
+
+  .news {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    box-shadow: rgb(200, 203, 209) 5px 5px 20px;
+    top: 8em;
+
+    &__close-container {
+      @include closeTopRight;
+      font-family: $fontParagraph;
+      font-size: 1em;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    &__carousel-container {
+      width: 100%;
+    }
+
+    .alone {
+      width: 100%;
+    }
+  }
+}
+
+.carousel {
+  .slider-wrapper {
+    width: 80%;
+    height: 62vh;
+  }
+}
+
+.carousel-status {
+  position: absolute;
+  top: 50%;
+  color: red;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 95%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  background-image: url('../assets//arrow-left.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 10;
+
+  @media screen and (max-width: 1040px) {
+    top: 50%;
+    left: 8%;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 340px) {
+    left: 10%;
+  }
+}
+
+.right-arrow {
+  position: absolute;
+  top: 95%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  background-image: url('../assets/arrow-right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 10;
+  @media screen and (max-width: 1040px) {
+    top: 50%;
+    left: 95%;
+    height: 30px;
+  }
+}
+
+.footer {
+  transform: translateY(80%);
+}
